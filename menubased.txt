@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class MyClass {
+    
+    
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+      System.out.println("Enter 1 for south Indian");
+      System.out.println("Enter 2 for north Indian");
+      System.out.println("Enter 3 for bengali");
+      System.out.println("Enter 4 for gujrati");
+      System.out.println("Enter 5 for final");
+      int sum=0,value,val;
+      value=sc.nextInt();
+      switch(value){
+          case 1:
+              System.out.println("south Indian price=60");
+              System.out.println("Enter quantity");
+              val=sc.nextInt();
+              sum+=val*60;
+              break;
+            case 2:
+                System.out.println("North Indian price=120");
+              System.out.println("Enter quantity");
+              val=sc.nextInt();
+              sum+=val*120;
+              break;
+             case 3:
+                System.out.println("bengali price=140");
+                System.out.println("Enter quantity");
+                val=sc.nextnt();
+                sum+=val*140;
+                break;  
+            case 4:
+                System.out.println("Gujrati price=160");
+                System.out.println("Enter quantity");
+                val=sc.nextInt();
+                sum+=val*160;
+                break;
+            case 5:
+                System.out.println("sum");
+                break;
+            
+      }
+      if(sum>500){
+          System.out.println("Desert is added");
+      }
+      else{
+          System.out.println("Desert is not added");
+      }
+    }
+}
